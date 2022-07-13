@@ -1,0 +1,34 @@
+.movie{
+    height: 800px;
+    width: 700px;
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#73A9AD;
+}
+
+.movie-name{
+    color: #F5F0BB;
+    background-color: #73A9AD;
+    font-size: 50px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    padding: 10px;
+}
+
+.movie img{
+    width:700px;
+    height:450px ;
+
+}
+
+.year{
+    color: #F5F0BB ;
+    font-size: 50px;
+
+}
+
+.box-office{
+color: #F5F0BB;
+font-size: 40px
+}

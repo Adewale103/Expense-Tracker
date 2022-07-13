@@ -1,23 +1,27 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Movie from './components/Movie';
+import movies from './data/movielist';
 
 function App() {
+
+  function displayMovie(movies){
+    return (<Movie
+        key = {movies.id}
+        name = {movies.name}
+        image = {movies.image}
+        year = {movies.year}
+        box_office = {movies.box_office}
+    />
+    )
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='App-header'>Top 10 Highest-Grossing Movies of all Times</h1>
+      <div className='movie-list'>
+        {movies.map(displayMovie)}
+      </div>
+          
     </div>
   );
 }
